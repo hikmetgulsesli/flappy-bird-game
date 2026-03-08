@@ -1,0 +1,17 @@
+[Unit]
+Description=AIToolPeak - AI Tools Review Blog
+After=network.target
+
+[Service]
+Type=simple
+User=setrox
+WorkingDirectory=/home/setrox/projects/aitoolpeak
+Environment=NODE_ENV=production
+Environment=PORT=3525
+Environment=SITE_URL=https://aitoolpeak.setrox.com.tr
+ExecStart=/usr/bin/npx tsx server/index.ts
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target

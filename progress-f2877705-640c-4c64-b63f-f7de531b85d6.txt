@@ -1,0 +1,17 @@
+=== US-004: Navigation and shared layout components ===
+COMPLETED: 2026-03-07T04:51:00+03:00
+FILES CHANGED: 
+  - index.html (added shared header navigation)
+  - settings.html (added shared header navigation, redesigned to match layout)
+  - styles.css (complete redesign with design tokens, navigation styles, responsive breakpoints)
+  - counter.js (minor update to match element IDs)
+  - settings.js (updated to match new HTML structure)
+KEY DECISIONS:
+  - Used Stitch design-tokens.css as the source of truth for all design values
+  - Implemented semantic <nav> element with proper accessibility attributes
+  - Added aria-current="page" for active page indication
+  - Used CSS custom properties for dark mode theming via data-theme attribute
+  - Mobile-first responsive design with breakpoints at 480px and 359px
+DEPENDENCIES ADDED: none
+BRANCH: f2877705-US-004
+PR_URL: https://github.com/hikmetgulsesli/screenmap-test/pull/2

@@ -1,0 +1,26 @@
+=== US-003: QR Code Generator Tool ===
+COMPLETED: 2026-02-28T05:24:00+03:00
+FILES_CHANGED:
+  - src/app/araclar/qr-kod/page.tsx (SEO metadata)
+  - src/app/araclar/qr-kod/QRCodeGenerator.tsx (main component)
+  - src/app/araclar/qr-kod/__tests__/QRCodeGenerator.test.tsx (tests)
+  - src/app/page.tsx (home page with tool links)
+  - src/app/layout.tsx (root layout)
+  - src/test/setup.ts (test setup)
+  - vitest.config.ts (vitest configuration)
+  - package.json (dependencies)
+
+KEY_DECISIONS:
+  - Used qrcode library for both PNG (toDataURL) and SVG (toString) generation
+  - Real-time generation with 300ms debounce for better UX
+  - Max input length of 2000 characters for reasonable QR code sizes
+  - Quick example buttons for common use cases (URLs, WiFi config)
+  - Client-side only processing for privacy (no server upload)
+  - Responsive grid layout: stacked on mobile, side-by-side on desktop
+
+DEPENDENCIES_ADDED:
+  - qrcode (QR generation)
+  - @types/qrcode (TypeScript types)
+  - vitest (testing framework)
+  - @testing-library/react (component testing)
+  - jsdom (DOM environment for tests)
