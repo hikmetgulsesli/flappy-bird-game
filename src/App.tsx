@@ -32,7 +32,7 @@ function App() {
     <div className="min-h-screen bg-gradient-to-br from-primary-50 to-secondary-100 dark:from-secondary-900 dark:to-secondary-950 py-8 px-4">
       <div className="max-w-lg mx-auto">
         <h1 className="text-4xl font-bold text-center mb-8 text-secondary-800 dark:text-secondary-100">
-          Todo App
+          Yapılacaklar
         </h1>
         <div className="bg-white dark:bg-secondary-800 rounded-2xl shadow-soft p-6">
           <TodoInput onAdd={addTodo} />

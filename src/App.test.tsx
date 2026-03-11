@@ -5,16 +5,16 @@ import App from './App'
 describe('App', () => {
   it('renders the todo app heading', () => {
     render(<App />)
-    expect(screen.getByText('Todo App')).toBeInTheDocument()
+    expect(screen.getByText('Yapılacaklar')).toBeInTheDocument()
   })
 
   it('renders the todo input', () => {
     render(<App />)
-    expect(screen.getByPlaceholderText('Add a new todo...')).toBeInTheDocument()
+    expect(screen.getByPlaceholderText('Yeni görev ekle...')).toBeInTheDocument()
   })
 
   it('shows empty state when no todos', () => {
     render(<App />)
-    expect(screen.getByText('No todos yet. Add one above!')).toBeInTheDocument()
+    expect(screen.getByText('Henüz görev yok. Yukarıdan ekleyin!')).toBeInTheDocument()
   })
 })

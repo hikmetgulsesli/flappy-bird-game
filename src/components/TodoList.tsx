@@ -10,7 +10,7 @@ export function TodoList({ todos, onToggle, onDelete }: TodoListProps) {
   if (todos.length === 0) {
     return (
       <p className="text-center text-secondary-400 py-8">
-        No todos yet. Add one above!
+        Henüz görev yok. Yukarıdan ekleyin!
       </p>
     )
   }
@@ -40,7 +40,7 @@ export function TodoList({ todos, onToggle, onDelete }: TodoListProps) {
           <button
             onClick={() => onDelete(todo.id)}
             className="opacity-0 group-hover:opacity-100 text-danger-500 hover:text-danger-700 transition-opacity"
-            aria-label="Delete todo"
+            aria-label="Görevi sil"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
